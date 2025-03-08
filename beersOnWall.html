@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="startingNumber">this is my number</p>
+</body>
+
+<script>
+let startNumber = prompt('How many bottles of beer');
+console.log(startNumber);
+
+document.getElementById("startingNumber").textContent=`There are ${startNumber} bottles of beer`;
+
+let nextNumber= --startNumber;
+console.log(nextNumber);
+
+let nextTag = document.createElement('p');
+
+startingNumber.append(nextTag);
+
+nextTag.textContent=`Take one down, pass it around ${startNumber} bottles of beer on the wall!`
+
+let nextNumber2= --startNumber;
+console.log(nextNumber2);
+
+let nextTag2 = document.createElement('p');
+
+nextTag.append(nextTag2);
+
+nextTag2.textContent=`Take one down, pass it around ${nextNumber2}`;
+
+</script>
+</html>
