@@ -10,8 +10,16 @@
 </body>
 
 <script>
+
+/* Create variable first. Setup prompt message for user to input a number to store in the variable startNumber */
 let startNumber = prompt('How many bottles of beer');
+
+/* Use console log to view in the browser console to check your work */
 console.log(startNumber);
+
+/* Must access the document and get the element id "startingNumber", so we can overrwrite the existing text. Use document.getElemengById
+call the element by id, overwrite content by using textcontent. Make it equal to statement and insert variable. Can use template literals
+instead of quotations. */
 
 document.getElementById("startingNumber").textContent=`There are ${startNumber} bottles of beer`;
 
